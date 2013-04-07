@@ -1,0 +1,262 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{latexsym}
+\usepackage{xeCJK}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setCJKmainfont[BoldFont=SimHei,ItalicFont=KaiTi]{SimSun}
+\setmainfont{Palatino Linotype}
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Qing He}\\ % Your name
+{\color{headings}\fontspec[Variant = 2]{Latin Modern Roman} Curriculum {Vit\fontspec[Variant = 3]{Latin Modern Roman}\ae}\\[15pt]\par} % Curriculum vitae text in the Latin Modern Roman font
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.52\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Projects} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+{\raggedleft{cooperative development}\par}
+
+{\raggedright\large \textit{FollowMe Mobile Navigation}\\[5pt]}
+\normalsize{An android application, developed by java, aiming to supply instant messaging and virtual navigation to walkers. It's a cooperative project, and I was responsible for user interaction and the function of taking photo in the system.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedleft{independent developement}\par}
+
+{\raggedright\large \textit{Light Blog}\\[5pt]}
+
+\normalsize{A full featured light blog website, based on PHP and MySQL. The functions of this system includes posting words, pics, videos and commenting, following, reposting, tagging, etc. It was developed with SpeedPHP and jQuery framework, and improved the user interaction with AJAX. }\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+
+{\raggedleft{cooperative developement}\par}
+
+{\raggedright\large \textit{WangXingRen Shoping Search Engine}\\[5pt]}
+
+\normalsize{A shopping search engine aiming to supply services of comparing price of goods of several online shopping malls. The database is compatible with almost all the formats of goods attributes. It's a cooperative project, and I was responsible for web crawler and part of web pages in the system. I used Heritrix framework to realize the web crawler. }\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 4
+%------------------------------------------------
+
+{\raggedleft{independent developement}\par}
+
+{\raggedright\large \textit{Dessert House}\\[5pt]}
+
+\normalsize{The practice project of J2EE couse, using spring, struts2, hibernate and bootstrap to implement a small online dessert house.}\\
+
+%------------------------------------------------
+% other EXPERIENCE s
+%------------------------------------------------
+
+
+\section{Other Projects} 
+
+\begin{tabular}{rl}
+     Library System & 
+     \begin{minipage}[t]{0.65\textwidth}
+     Independent project. The practice project of java course，using java GUI and socket, implementing a library system.
+     \end{minipage}
+     \\
+     YiPinGeCi & 
+     \begin{minipage}[t]{0.65\textwidth}
+     Independent project. It's my personal project of interest, implementing a platform of sharing lyrics. It was developed with PHP and MySQL.
+     \end{minipage}
+     \\
+     UML White Board     & 
+     \begin{minipage}[t]{0.65\textwidth}
+     Cooperative project. It's a white board for programers which are not work at the same place to design UML together. In the project, I was responsible for the implement of UML elements using java GUI knowledge. And to simplify developement, I used 
+     many design patterns like command, abstract factory, builder, etc.
+     \end{minipage}
+     \\
+     Train Tickets   & 
+     \begin{minipage}[t]{0.65\textwidth}
+     Independent project. The practice project of linux course. Supplying Train tickets purchase with sockets and MySQL knowledge.
+     \end{minipage}
+\end{tabular}
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.42\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{6.6cm}} 
+\raisebox{-3pt}{\Mobilefone} &  (+86)15996234989 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{http://www.captainjabby@gmail.com}{captainjabby@gmail.com} \\ % Email address
+\Keyboard & Nanjing University Software Institute,2010, Bachelor \\ % Website
+\raisebox{-4pt}{\textifsymbol{18}} & No.22 Hankou Street, Gulou District, Nanjing, Jiangsu Province\\ % Address
+\end{tabular}
+}
+}\\[10pt]
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills} 
+
+\begin{tabular}{rl}
+& \\
+Languages
+& Java, PHP, C, C++, javascript\\ 
+& \\
+Tools
+& Eclipse, IntelliJ, Maven, Visual Studio,\\
+& PHPStorm\\
+& \\
+Frameworks
+& Spring, Struts2, SpeedPHP, Hibernate,\\
+& Heritrix , jQuery\\
+& \\ \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards} 
+
+\begin{tabular}{rl}
+& \\
+2011	 & \textbf{Third Prize of The Ninth Software Design}\\
+& \textbf{Competition of Software Institute}\\
+& \textit{FollowMe Mobile Navigation}\\ \\
+
+%------------------------------------------------
+
+2012	 & \textbf{Recognition Award of The First China} \\ 
+& \textbf{Software Cup Competition}\\
+& \textit{WangXingRen Shoping Search Engine}\\ 
+& \\
+\end{tabular}\\[10pt]
+
+
+%----------------------------------------------------------------------------------------
+%	SCORE	
+%----------------------------------------------------------------------------------------
+
+\section{Academic Performance} 
+
+\begin{tabular}{rl}
+& \\
+\textsc{GPA}
+& 4.2 \\
+& \\
+\textsc{English}
+& CET-6 \\
+& \\
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	LINK	
+%----------------------------------------------------------------------------------------
+
+\section{Links} 
+
+\begin{tabular}{rl}
+& \\
+github
+& \href{https://github.com/hqtc123}{https://github.com/hqtc123} \\
+& \\
+\textsc{YI PIN GE CI}
+& \href{http://ypgc.sinaapp.com/}{http://ypgc.sinaapp.com/} \\
+& \\
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
