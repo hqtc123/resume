@@ -78,98 +78,100 @@
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\sffamily\Huge 贺庆}\\ % Your name
-{\color{headings}\fontspec[Variant = 2]{Latin Modern Roman} 个人简历 \fontspec[Variant = 3]{Latin Modern Roman}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+\par{\centering{\sffamily\Huge Qing He}\\ % Your name
+{\color{headings}\fontspec[Variant = 2]{Latin Modern Roman} Curriculum {Vit\fontspec[Variant = 3]{Latin Modern Roman}\ae}\\[15pt]\par} % Curriculum vitae text in the Latin Modern Roman font
 	
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\begin{minipage}[t]{0.52\textwidth} % Start the left-hand side of the page
 \vspace{0pt} % Trick for alignment
 	
 %----------------------------------------------------------------------------------------
-%	PROJECT EXPERIENCE
+%	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\section{主要项目} 
+\section{Projects} 
 
 %------------------------------------------------
-% WORK EXPERIENCE 1
+% Project EXPERIENCE 1
 %------------------------------------------------
 
-{\large \textit{全唐诗典故搜索系统}} \hfill  \hfill {\textsc{2015年\quad 合作项目}\\}
+{\raggedleft{cooperative developement}\par}
 
-\normalsize{实现对于给定典故，查询《全唐诗》中引用该典故的诗作信息和引用该典故的诗句。项目使用Python +
- MongoDB实现。主要包括典故数据抓取、《全唐诗》读取和清理、诗句分词、建立倒排索引和Web部分。我在项目中负责抓取典故信息以及对诗句进行枚举分词和建立倒排索引。其中数据爬取使用Python实现，倒排索引的建立运用了MongoDB的Map-Reduce引擎。}\\
+{\raggedright\large \textit{Search Allusion from Poems System }\\[5pt]}
 
-%------------------------------------------------
-% WORK EXPERIENCE 2
-%------------------------------------------------
-{\large \textit{汪星人购物搜索引擎}} \hfill  \hfill {\textsc{2013年\quad 合作项目}\\}
-
-\normalsize{一个商品比价网站，实现了不同电商中同款产品的价格比较功能。此项目由我和本院其他两位同学组队完成，用于参加“中国软件杯”比赛。我在项目中负责网页爬虫功能的实现以及部分前台开发。其中，网页爬虫的实现基于定制的开源框架Heritrix，网站部分的开发使用了Java Web框架和一些基本的前端技术。}\\
+\normalsize{An Allusion Searching System, developed by Python and mongoDB, aiming to supply search service of allusions cited by poems. It's a cooperative project, and I was responsible for developing the clawer,  participle of poems and building inverted index of words we got by participle. }\\
 
 %------------------------------------------------
-% WORK EXPERIENCE 3
+% Project EXPERIENCE 2
 %------------------------------------------------
 
-{\large \textit{在线甜品商店系统}} \hfill  \hfill {\textsc{2013年\quad 个人项目}\\}
+{\raggedleft{independent developement}\par}
 
-\normalsize{Java Web项目，实现了一个小型的网上甜品屋商店系统。项目中运用了SpringMVC+hibernate的主流JavaEE开发框架。前端部分使用了jQuery 和bootstrap。}\\
+{\raggedright\large \textit{Dessert House}\\[5pt]}
+
+\normalsize{The practice project of J2EE course, using spring, struts2, hibernate and bootstrap to implement a small online dessert house.}\\
 %------------------------------------------------
-% WORK EXPERIENCE 4
-%------------------------------------------------
-
-{\large \textit{Follow手机导航系统}} \hfill  \hfill {\textsc{2011年\quad 合作项目}\\}
-
-\normalsize{Android系统导航App，具有聊天、实景导航两大主要功能。此项目是由我和其他四名同学组队完成，用于参加学院竞赛。我在此项目中负责UI交互以及手机拍照上传部分的功能的实现。}\\
-
-%------------------------------------------------
-% other EXPERIENCE s
+% Project EXPERIENCE 3
 %------------------------------------------------
 
+{\raggedleft{cooperative developement}\par}
 
-\section{其他项目} 
+{\raggedright\large \textit{WangXingRen Shoping Search Engine}\\[5pt]}
+
+\normalsize{A shopping search engine aiming to supply services of comparing price of goods of several online shopping malls. The database is compatible with almost all the formats of goods attributes. It's a cooperative project, and I was responsible for web crawler and part of web pages in the system. I used Heritrix framework to realize the web crawler. }\\
+
+%------------------------------------------------
+% Project EXPERIENCE 4
+%------------------------------------------------
+
+{\raggedleft{cooperative development}\par}
+
+{\raggedright\large \textit{FollowMe Mobile Navigation}\\[5pt]}
+\normalsize{An android application, developed by java, aiming to supply instant messaging and virtual navigation to walkers. It's a cooperative project, and I was responsible for user interaction and the function of taking photo in the system.}\\
+
+
+
+%------------------------------------------------
+% other Project s
+%------------------------------------------------
+
+
+\section{Other Projects} 
 
 \begin{tabular}{rl}
-     图书管理系统 & 
-     \begin{minipage}[t]{0.72\textwidth}
-     独立开发，使用Java GUI和Socket相关API实现的一个
-     完整的C/S架构图书馆管理系统。
+     Library System & 
+     \begin{minipage}[t]{0.65\textwidth}
+     The practice project of java course，using Java GUI, I/O and socket API, implementing a library system.
      \end{minipage}
      \\
-	\\
-     网络共享画板     & 
-     \begin{minipage}[t]{0.72\textwidth}
-
-     合作开发，实现了一个方便在异地工作
-     的程序员进行UML设计的白板系统。我
-     在项目中负责画板UML图元的设计和实
-     现，主要是Java GUI知识，使用了抽象
-     工厂，命令，建造者等多种设计模式。
+     UML White Board     & 
+     \begin{minipage}[t]{0.65\textwidth}
+     It's a white board for programers which are not work at the same place to design UML together. In the project, I was responsible for the implement of UML elements using java GUI knowledge. And to simplify developement, I used 
+     many design patterns like command, abstract factory, builder, etc.
      \end{minipage}
      \\
-	\\
-     轻博客系统 & 
-     \begin{minipage}[t]{0.72\textwidth}
-     独立开发，一个完整的轻博客网站。实现主流轻博客的发布文字，图片，视频以及评论，关注，标签等功能。后台使用了PHP+MySQL技术，应用了SpeedPHP框架。前台使用了jQuery+Bootstrap框架。
+     Light Blog   & 
+     \begin{minipage}[t]{0.65\textwidth}
+     A full featured light blog website, based on PHP and MySQL. The functions of this system includes posting words, pics, videos and commenting, following, reposting, tagging, etc. It was developed with SpeedPHP and jQuery framework, and improved the user interaction with AJAX..
      \end{minipage}
 \end{tabular}
 %----------------------------------------------------------------------------------------	
 
 \end{minipage} % End the left-hand side of the page
 \hfill
-\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\begin{minipage}[t]{0.42\textwidth} % Start the right-hand side of the page
 \vspace{0pt} % Trick for alignment
 
 %----------------------------------------------------------------------------------------
 %	COLORED BOX
 %----------------------------------------------------------------------------------------
 \colorbox{shade}{\textcolor{text1}{
-\begin{tabular}{c|p{7cm}} 
+\begin{tabular}{c|p{6.6cm}} 
 \raisebox{-3pt}{\Mobilefone} &  (+86)18510165768 \\ % Phone number
 \raisebox{-1pt}{\Letter} & hqdo@foxmail.com \\ % Email address
-\Keyboard & 南京大学软件学院2015级硕士在读 \\ % Education
-\raisebox{-4pt}{\textifsymbol{18}} & 江苏省南京市鼓楼区汉口路22号南京大学 \\ % Address
+\Keyboard & Nanjing University Software Institute,2015, master \\ % Website
+\raisebox{-4pt}{\textifsymbol{18}} & No.22 Hankou Street, Gulou District, Nanjing, Jiangsu Province\\ % Address
 \end{tabular}
 }
 }\\[10pt]
@@ -179,75 +181,80 @@
 %	SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{主要技能} 
+\section{Skills} 
 
 \begin{tabular}{rl}
-语言
-& Java, PHP, Python, javascript\\ 
-工具
-& MySQL, mongodb, Eclipse, IntelliJ, Maven, Git\\
-框架
-& SpringMVC, Flask, Hibernate ,jQuery,\\
-&  AngularJS\\
-\\
+& \\
+Languages
+& Java, Python, PHP, C, javascript\\ 
+& \\
+Tools
+& Eclipse, IntelliJ, Maven, MySQL\\
+& mongoDB\\
+& \\ 
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
+%    WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\section{工作经历} 
+\section{Work Experience} 
 
-{\large \textit{思目创意设计产业有限公司}} \hfill  \hfill {\textsc{2014-07-01至2015-08-31}}
+{\large \textit{SIMU SuperID Project}} \hfill  \hfill {\textsc{2014-07-01 to 2015-08-31}}
 
-\normalsize{公司规模：20人。公司是一个创业团队，产品是一个基于Java EE的云办公系统SuperId，我主要负责部分业务逻辑的设计和开发，所用技术涉及SpringMVC，Hibernate，Shiro，AngularJS等。}\\
-
-
-%------------------------------------------------
-% INTERN EXPERIENCE 1
-%------------------------------------------------
-
-\section{实习经历} 
-{\large \textit{蚂蚁金服集团}} \hfill  \hfill {\textsc{2016-06-01至2016-09-01}}
-
-\normalsize{公司规模：5000+人。我的职责：实习期间就职于支付宝国际工程部的工具研发团队。实习期间完成了一个独立的接口参数校验测试系统，具体功能是根据内部的API文档，解析其参数格式约定，构造出非法用例，通过向测试系统发送HTTP请求，检验测试结果是否符合预期，并生成测试报告。}\\ 
-
-
-{\large \textit{北京百度网讯科技有限公司}} \hfill  \hfill {\textsc{2013-09-25至2014-03-22}}
-
-\normalsize{公司规模：10000+人。我的职责：所在团队主要负责百度用户行为数据仓库（UDW）的线上维护工作。我实习过程中完成了UDW的一个数据集群的监控管理项目，学习了数据仓库的基本架构。}\\\\
+\normalsize{It's a startup company，aiming to build a cloud office website develping by Java EE 。
+ I was involved to build the infrastructure of the Project and resposible for a half of the achieve work of our functional requirements.  }\\
 
 %----------------------------------------------------------------------------------------
-%	AWARDS
+%    AWARDS
 %----------------------------------------------------------------------------------------
 
-\section{主要奖项} 
+\section{Awards} 
 
 \begin{tabular}{rl}
-
-2011	 & \textbf{南京大学软件学院第九届创新项目大赛三等奖}\\
-& \textit{FollowMe手机导航系统}\\ 
+& \\
+2011  & \textbf{Third Prize of The Ninth Software Design}\\
+& \textbf{Competition of Software Institute}\\
+& \textit{FollowMe Mobile Navigation}\\ \\
 
 %------------------------------------------------
 
-2012	 & \textbf{第一届“中国软件杯”优秀奖}\\
-& \textit{汪星人购物搜索引擎}\\ 
+2012  & \textbf{Recognition Award of The First China} \\ 
+& \textbf{Software Cup Competition}\\
+& \textit{WangXingRen Shoping Search Engine}\\ 
+& \\
+\end{tabular}\\[10pt]
 
+%----------------------------------------------------------------------------------------
+%	SCORE	
+%----------------------------------------------------------------------------------------
+
+\section{Academic Performance} 
+
+\begin{tabular}{rl}
+& \\
+\textsc{GPA}
+& 4.2 \\
+& \\
+\textsc{English}
+& CET-6 \\
+& \\
 \end{tabular}\\[10pt]
 
 %----------------------------------------------------------------------------------------
 %	LINK	
 %----------------------------------------------------------------------------------------
 
-\section{相关链接} 
+\section{Links} 
 
 \begin{tabular}{rl}
+& \\
 github
 & \href{https://github.com/hqtc123}{https://github.com/hqtc123} \\
-简书 Blog
-& \href{http://www.jianshu.com/u/3fc17fceece3}{http://www.jianshu.com/u/3fc17fceece3} \\
-SuperId Beta
-& \href{http://menkor.com}{http://menkor.com} \\
+& \\
+\textsc{SuperID Beta}
+& \href{http://menkor.com}{http://menkor.com/} \\
+& \\
 \end{tabular}\\[10pt]
 
 %----------------------------------------------------------------------------------------
